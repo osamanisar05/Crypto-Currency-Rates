@@ -26,7 +26,7 @@ export default function CoinMArket(){
   useEffect(
     ()=>{
 
-      fetch(`http://api.coinlayer.com/live?access_key=${API_KEY}`)
+      fetch(`https://api.coinlayer.com/live?access_key=${API_KEY}`)
 
       .then((Response)=> Response.json()) 
       .then((jsonConverted) => setData(jsonConverted))
