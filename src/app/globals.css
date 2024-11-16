@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.Header{
+  width: 100%;
+  border-collapse: collapse;
+  padding: 40px;
+  font-family:'Times New Roman', Times, serif;
+  background-color: #c7bff5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  font-size: x-large;
+  font-weight:100;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  background-color: #7f9bf7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Table header */
+.table th {
+  background-color: #6063f5;
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 16px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Table cells */
+.table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Row hover effect */
+.table tr:hover {
+  background-color: #b2b2b8;
+}
+
+/* Add spacing between rows */
+.table tr {
+  border-bottom: 3px solid #ddd;
+}
+
+/* Optional: Add some margin and padding around the page content */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
