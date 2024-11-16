@@ -22,7 +22,7 @@ interface CoinMarketResponse {
 
 export default function CoinMArket(){
   const [data,setData] = useState<CoinMarketResponse | null>(null);
-  const API_KEY = 'f6e945ee7008cc33cbbe1fe6bfb099e1'
+  const API_KEY = '1e23b816b51428000f7a0ee81096309c'
   useEffect(
     ()=>{
 
